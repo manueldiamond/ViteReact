@@ -1,19 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
+import { useEffect } from "react"
+import { Nav } from "./components"
 
 function App() {
-  const [count, setCount] = useState(0)
-
+    useEffect(()=>{
+      document.title="Vite|Next Generation Frontend Tooling"
+    },[])
+    
   return (
-    <>
-      <h1 class="text-xl font-bold underline">
-        Hello world!
-      </h1>
-      
-      <button className='rounded-full  px-8 py-3 bg-blue-600  text-white '>Get Started</button>
-    </>
+    <div className="app bg-gray-950">
+      <Nav/>
+    </div>
   )
 }
 
