@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .app{
-    @apply bg-main-dark min-h-screen text-white font-sans;
+    @apply bg-dark min-h-screen text-text font-sans;
 }
 h3{
     @apply font-bold text-xl;

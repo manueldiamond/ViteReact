@@ -12,7 +12,7 @@ export default {
         "less-dark":"#242528",
         "text":"#CBCBC4",
         "gray-text":"#77767C",
-        "vite-blue":"#646CFF"
+        "vite-blue":"#646CFF",
       }
     },
   },

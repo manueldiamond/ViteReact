@@ -12,7 +12,7 @@ function navlink(text="",url="#"){
 }
 export default function Nav(){
     return( 
-        <nav className="h-[5rem]  flex w-[100%] justify-between px-[1.5rem] py-[1rem] fixed  ">
+        <nav className="h-[5rem]  flex w-[100%] justify-between px-[1.5rem] py-[1rem] fixed  border-b-2 border-b-black">
             <div className="flex gap-10">
                 <a className="flex gap-[.5rem] items-center">
                     <img className="" src={vitelogo}/>
