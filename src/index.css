@@ -3,3 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.app{
+    @apply bg-zinc-800 min-h-screen text-white font-sans;
+}
+h3{
+    @apply font-bold text-xl;
+
+}
+.hero-gradient{
+    @apply bg-gradient-to-br from-[#bd34fe] to-[#47caff];
+}

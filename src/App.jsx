@@ -7,7 +7,7 @@ function App() {
     },[])
     
   return (
-    <div className="app bg-gray-950">
+    <div className="app">
       <Nav/>
     </div>
   )
