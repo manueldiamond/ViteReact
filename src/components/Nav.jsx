@@ -11,7 +11,7 @@ function navlink(text="",url="#"){
     return {text,url}
 }
 export default function Nav(){
-    return(
+    return( 
         <nav className="h-[5rem] flex w-[100%] justify-between px-[1.5rem] py-[1rem] fixed  ">
             <div className="flex gap-10">
                 <a className="flex gap-[.5rem] items-center">
