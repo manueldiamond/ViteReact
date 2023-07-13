@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { Nav } from "./components"
+import { Nav, Hero, Features,Sponsors, Footer } from "./components"
 
 function App() {
     useEffect(()=>{
@@ -9,7 +9,10 @@ function App() {
   return (
     <div className="app">
       <Nav/>
-      <Hero/
+      <Hero/>
+      <Features/>
+      <Sponsors/>
+      <Footer/>
     </div>
   )
 }

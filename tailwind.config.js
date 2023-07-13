@@ -6,14 +6,28 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        "inter":['Inter']
+      },
       colors:{
-        "dark":"#1E1E20",
+        "dark":"#1e1e20",
         "darker":"#161618",
         "less-dark":"#242528",
         "text":"#CBCBC4",
         "gray-text":"#77767C",
-        "vite-blue":"#646CFF",
-      }
+        "less-gray-text":"#9C9CA3",
+        "brand":"#646CFF",
+        "brand-light":"#747bff",
+        "sponsor":"#db2777",
+      },
+      zIndex:{
+        "-1":-1,
+        "1":"1",
+      },
+      borderWidth:{
+        2:"1px",
+      },
+     
     },
   },
   plugins: [],
