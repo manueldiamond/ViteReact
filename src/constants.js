@@ -5,7 +5,8 @@ const navlinks=[
     link("Config","https://vitejs.dev/config/"), 
     link("plugins","https://vitejs.dev/plugins/"),
     link("Resources",{"links":[
-            link("")
+            link("Vite 2.0"),
+            link("Vite 3.0")
         ]}),
     link("Version"),
 ]
