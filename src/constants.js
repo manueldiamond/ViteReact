@@ -4,11 +4,21 @@ const navlinks=[
     link("Guide","https://vitejs.dev/guide/"),
     link("Config","https://vitejs.dev/config/"), 
     link("plugins","https://vitejs.dev/plugins/"),
-    link("Resources",{"links":[
-            link("Vite 2.0"),
-            link("Vite 3.0")
-        ]}),
-    link("Version"),
+    links("Resources",[
+        link("Team"),
+        link("Releases"),
+        link("Twitter","#",{target:"_blank"}),
+        link("Discord Invite","#",{target:"_blank"}),
+        link("Awesome Vite","#",{target:"_blank"}),
+        link("DEV community","#",{target:"_blank"}),
+        link("Rollup Plugins Compat","#",{target:"_blank"}),
+        link("Changelog","#",{target:"_blank"})
+        
+    ]),
+    links("Version",[
+        link("Vite 2.0 Docs","#",{target:"_blank"}),
+        link("Vite 3.0 Docs","#",{target:"_blank"})
+    ]),
 ]
 
 //BRANDING
@@ -87,6 +97,11 @@ export {
 // create a link-text and link-url pair
 function link(text="",url="#",extra={}){
     return ({text,url,...extra})
+}
+
+
+function links(text="",links=[]){
+    return ({text,links})
 }
 function feature(icon,title,details) {
     return  ({icon,title,details})

@@ -1,10 +1,28 @@
+
+import { useEffect } from "react"
 import {vitelogo} from "../assets"
 import { navlinks,logoUrl ,name } from "../constants"
+import Dropdown from "./Dropdown"
+import Link from "./Link"
+import { useState } from "react"
 
 export default function Nav(){
-    let top=true
+    const [top,setTop] = useState(false)
+    
+    useEffect(()=>{
+        const handleScroll = () => {
+            setTop(window.scrollY !== 0);
+          };
+        // Add the scroll event listener when the component mounts
+        window.addEventListener('scroll', handleScroll);
+
+        // Clean up the event listener when the component unmounts
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return( 
-        <nav className={"h-[4rem]  flex w-[100%] justify-between px-[2rem] py-[.7rem] fixed  z-50" + (top?" border-b-2  border-b-black bg-dark":"")}>
+        <nav className={`h-[4rem]  flex w-[100%] justify-between px-[2rem] py-[.7rem] fixed  z-50 transition-colors ${top?" border-b-2  border-b-black bg-dark":"border-[rgba(0,0,0,0)]"}`}>
             <div className="flex gap-7 ">
                 <a className="flex gap-[.5rem] items-center">
                     <img className="h-[1.5rem]" src={logoUrl}/>
@@ -23,18 +41,8 @@ export default function Nav(){
                 </button>
             </div>
             
-            <div className="nav-list flex gap-10 items-center">{
-                navlinks.map((link,i)=>(
-                    <a className={`flex gap-1 ${link.links?"hover:text-less-dark":"hover:text-brand-light"} `} key={i} href={link.url}>{link.text}
-                     
-                    {link.links&&(
-                    <svg width="12.5" xmlns="http://www.w3.org/2000/svg" aria-hidden="false" focusable="" viewBox="0 0 24 24" className="text-icon" >
-                        <path fill="currentColor"  stroke="currentColor"  
-                        d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path>
-                        </svg>
-                        )}
-                    </a>
-                ))}  
+            <div className="nav-list flex gap-10 items-center">
+                { navlinks.map((link,i)=>( link.links?<Dropdown {...link}/>:<Link {...link}/>  ))}  
             </div>
         </nav>
     )

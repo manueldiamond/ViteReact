@@ -1,18 +1,10 @@
-import { useEffect } from "react"
-import { Nav, Hero, Features,Sponsors, Footer } from "./components"
+import { Home } from "./Pages"
 
 function App() {
-    useEffect(()=>{
-      document.title="Vite|Next Generation Frontend Tooling"
-    },[])
-    
+ 
   return (
     <div className="app">
-      <Nav/>
-      <Hero/>
-      <Features/>
-      <Sponsors/>
-      <Footer/>
+     <Home/>
     </div>
   )
 }

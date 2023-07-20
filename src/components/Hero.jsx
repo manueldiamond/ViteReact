@@ -5,7 +5,7 @@ import Button from "./Button";
 export default function  Hero(){
   return(
     <main className="hero" >
-      <div className=" container flex justify-between items-center pt-[144px] pb-[64px]">
+      <div className=" container flex justify-between items-center pt-[7.5rem] pb-[64px]">
         <div className="main w-[50%]">
           <h1 className="z-50 mb-5">
             <div className=" bg-clip-text w-min hero-text-gradient text-transparent">{name}</div>
@@ -14,7 +14,7 @@ export default function  Hero(){
     
           <p className="text-[1.5rem] font-[500] leading-8">
             {heroParagraph}</p>
-          <br/>
+          <br/> 
 
           <div className="actions flex gap-3">
             {heroActions.map((action,i)=>(

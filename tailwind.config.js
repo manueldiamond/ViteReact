@@ -13,6 +13,7 @@ export default {
         "dark":"#1e1e20",
         "darker":"#161618",
         "less-dark":"#242528",
+        "gray-dark":"#313037",
         "text":"#CBCBC4",
         "gray-text":"#77767C",
         "less-gray-text":"#9C9CA3",
