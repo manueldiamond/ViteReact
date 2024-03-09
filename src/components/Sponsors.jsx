@@ -22,11 +22,11 @@ const Sponsors = () => {
                         <div className='flex flex-wrap gap-1 '>
                             {
                             sponsors[level].map((sponsor)=>(
-                                <article  className={`flex-1 bg-less-dark 
+                                <article key={sponsor.name}  className={`flex-1 bg-less-dark 
                                 ${(level==="Gold")?"h-[112px] min-w-[200px]":"h-[200px] min-w-[320px]"}
                                 transition-colors  duration-300 hover:bg-white `} >
                                     <a className="invert w-[100%]       h-[100%] flex grayscale items-center transition-[filter] justify-center hover:filter-none" href={sponsor.url}>
-                                        <img className="max-w-[192px] max-h-[56px]" src={`/src/assets/imgs/sponsors/${sponsor.img}`}/>
+                                        <img className="max-w-[192px] max-h-[56px]" src={`/sponsors/${sponsor.img}`}/>
                                     </a>
                                 </article>
                             ) )
