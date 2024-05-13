@@ -8,5 +8,4 @@ For another one where I used raw CSS: https://github.com/manueldiamond/Linked-ou
 It is has a posts and feed system with the interface based on Linked-in
 also uses Redux for global state management.
 
-Another React based project is this template Portfolio Site at:
- (NextJs) 
+More React Projects:  
