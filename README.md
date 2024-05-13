@@ -1,4 +1,4 @@
-**DEPLOYMENT: https://manueldiamond.github.io/ViteReact/ ** 
+##DEPLOYMENT: https://manueldiamond.github.io/ViteReact/ 
 A simple clone of the original Vite.js website: https://vitejs.dev
 
 Hi there, Hiring Manager!
