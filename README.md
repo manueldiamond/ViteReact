@@ -5,6 +5,7 @@ Hi there, Hiring Manager!
 This is a basic site I made using React.js,TailwindCSS.
 
 For another one where I used raw CSS: https://github.com/manueldiamond/Linked-out 
+
 It is has a posts and feed system with the interface based on Linked-in
 also uses Redux for global state management.
 
